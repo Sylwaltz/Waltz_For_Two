@@ -1,14 +1,143 @@
-/* HIER KOMT JOUW CSS */
+
 @font-face {
-  font-family: "Comic Relief";
-  src: url(../type/ComicRelief-Regular.woff2);
+  font-family: "Rubik Spraypaint";
+  src: url(../type/Coiny-Regular.ttf);
   font-weight: 400;
   font-style: normal;
 }
+/* custom light en dark mode werkt niet :(*/
+html{ 
+    color-scheme: light dark;
+    --gradient-color-light: light-dark(#efc576, midnightblue);
+    --gradient-color-dark:light-dark(#efad76,purple);
+  }
+html:has( [value="light-theme"]:checked){
+    color-scheme:light;
+    
+}
+
+html:has( [value="dark-theme"]:checked){
+    color-scheme:dark;
+}
 
 body {
-  font-family: "Comic Relief", system-ui;
-  background-color: Canvas;
-  color: CanvasText;
-  color-scheme: light dark;
+  font-family: "Rubik Spraypaint", system-ui;
+  display:grid;
+  height: 100vh;
+  margin: 1em;
+ 
+  background-image: linear-gradient(#efad76,#efc576 67%);
+  background-image: linear-gradient(var(--gradient-color-dark),var(--gradient-color-light) 67%);
+
+  background-attachment: fixed;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:  
+    "header"
+    "main"
+    "footer";
+  gap:1em;
+  
+}
+  header {
+    grid-area: "header";
+    h1 {  
+      color: black;
+      
+    }
+    nav {
+      background-color: antiquewhite;
+      
+    }
+  }   
+  
+
+  main {
+    /* MAIN IMAGE*/
+    grid-area: "main";
+    button {
+      display: flex;
+      margin-right: auto;
+      margin-left: auto;
+      background-color: inherit;
+      border: none;
+    img {
+      width: auto;
+      height: 70em;
+        /* grid-area: image; */
+        object-fit: cover;
+
+        @media (max-width: 768px) {
+        display:grid;
+        }
+
+      }}
+
+    /* EERSTE POPOVER*/
+    article {
+      border-color: black;
+      background-color: rgb(0 0 0 / 60%);
+      backdrop-filter: blur(2px);
+      
+      
+      img {
+        width: 20em;
+        height: 15em;
+        object-fit: cover;
+
+      }
+
+      /* TWEEDE POPOVER*/
+      div {
+        border: none;
+        background: none;
+          img { 
+            width: 20em;
+            height: 20em;
+            object-fit: cover;
+            margin: 0;
+            padding: 0;
+            border: none;
+  
+
+ @media(width > 20em) {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "header main main"
+    "header footer main"
+   
+          }
+      }
+    }
+  }
+  
+  footer {
+    grid-area: "footer";
+  }
+  section {
+    display: flex;
+    flex-direction: column;
+    background-color: antiquewhite;
+    position: relative;
+
+    p {
+      text-align: center;
+    }
+
+    img {
+      width: 100%;
+      max-width: 20rem;
+      margin-right: auto;
+      margin-left: auto;      
+
+    }
+
+  
+    @media (min-width: 768px) {
+      display: grid;
+      grid-area: header;
+    }
+  }
 }
