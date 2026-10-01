@@ -41,6 +41,7 @@ body {
     z-index: 100;
     right: 2%;
 
+
   }
   input{
     display: none;
@@ -96,11 +97,22 @@ header {
       
     nav {
       display: flex;
-      flex-wrap: balance;
+      flex-direction: row;
       align-items: center;
       gap: 2em;
       font-size: 1em;
         
+      }
+
+    @media(width < 20em) {
+        header{ 
+          height: 10em;
+        }
+        nav{
+          display: flex;
+          flex-direction: column;
+
+        }
       }
    }
 
@@ -116,7 +128,7 @@ main {
       border: none;
     img {
       width: auto;
-      height: 70em;
+      height: 50em;
         /* grid-area: image; */
         object-fit: cover;
 

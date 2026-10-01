@@ -71,7 +71,13 @@ Pijlen
 
 Check-out (Sprint 2 : AUG 30)
 Waar staat WCAG en A11y voor?:
-WCAG staat voor de Web Content Accessibility Guidelines, dit is een checklist waar de geaccepteerde standaarden van toegangelijkheid worden gecheckt
+
+- WCAG staat voor de Web Content Accessibility Guidelines, dit is een checklist waar de geaccepteerde standaarden van toegangelijkheid worden gecheckt
+  Wat vind je lastiger, je laptop/websites met een alleen een toetsenbord bedienen of met een screenreader?
+  Waarom? Waar moet je nog mee oefenen?
+- Ik vind het nog best moeilijk met alleen een toetsenbord een website te bedienen. Het komt vooral omdat ik veel shortcuts moet herinneren om de site te bedienen.
+  Met welke beperking rekening houden vind je het meest lastig? Vind je dat je beperkt wordt in wat je kunt ontwerpen? Of heb je al manieren gevonden
+- Ik ben nog niet bewust bezig geweest met een beperking, dus ik voel me nog niet heel gelimiteerd. Maar ik denk dat ik wel moeite ga hebben met cognitief
 
 ### 3 sept - [Workshop]
 
