@@ -29,15 +29,37 @@ body {
   
     background-image: linear-gradient(#efad76,#efc576 67%);
     background-image: linear-gradient(var(--gradient-color-dark),var(--gradient-color-light) 67%);
+    background-attachment: fixed;
 
+  form {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: fixed;
+    top: 8.5%;
+    bottom: 10%;
+    z-index: 100;
+    right: 2%;
+
+  }
   input{
     display: none;
-
      }
-
-      form img:nth-of-type(2){
+  label img{
+    width: 8em;
+    padding: 0%;
+    margin: 0%;
+  }  
+  label img:nth-of-type(2){
       display: none;
      }
+  label input:checked ~ img:nth-of-type(1){
+      display: none; 
+    }
+  label input:checked ~ img:nth-of-type(2){
+      display: inline;
+  }
+
 
   /*
   background-attachment: fixed;
@@ -60,7 +82,10 @@ header {
     top: 0%;
     margin: 0%;
     padding: 0%;
-    height: 100px;
+    height: 5em;
+    border-bottom-left-radius: 15%;
+    border-bottom-right-radius: 15%;
+  
   
     h1{
       align-items: center;
