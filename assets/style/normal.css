@@ -10,6 +10,7 @@ html{
     color-scheme: light dark;
     --gradient-color-light: light-dark(#efc576, midnightblue);
     --gradient-color-dark:light-dark(#efad76,purple);
+    --header-color:light-dark(#cb9162, DarkSlateBlue)
   }
 html:has( [value="light-theme"]:checked){
     color-scheme:light;
@@ -31,7 +32,7 @@ body {
     background-image: linear-gradient(var(--gradient-color-dark),var(--gradient-color-light) 67%);
     background-attachment: fixed;
 
-  form {
+  form:nth-of-type(1){
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -42,6 +43,7 @@ body {
     right: 2%;
 
 
+
   }
   input{
     display: none;
@@ -50,6 +52,8 @@ body {
     width: 8em;
     padding: 0%;
     margin: 0%;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
   }  
   label img:nth-of-type(2){
       display: none;
@@ -60,6 +64,12 @@ body {
   label input:checked ~ img:nth-of-type(2){
       display: inline;
   }
+
+   label:hover {
+    transform: translate(-.1em, -.1em);
+    transition: 0.5s ease-in-out;
+   }
+
 
 
   /*
@@ -78,7 +88,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: aliceblue;
+    background-color: var(--header-color);
     position: sticky;
     top: 0%;
     margin: 0%;
@@ -95,7 +105,7 @@ header {
       
     }
       
-    nav {
+    nav:nth-of-type(1){
       display: flex;
       flex-direction: row;
       align-items: center;
@@ -184,12 +194,8 @@ main {
   section {
     display: flex;
     flex-direction: column;
-    background-color: antiquewhite;
+    background-color: inherit;
     position: relative;
-
-    p {
-      text-align: center;
-    }
 
     img {
       width: 100%;
