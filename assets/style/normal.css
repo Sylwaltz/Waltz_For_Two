@@ -18,17 +18,28 @@ html:has( [value="light-theme"]:checked){
 
 html:has( [value="dark-theme"]:checked){
     color-scheme:dark;
+    
 }
 
 body {
-  font-family: "Rubik Spraypaint", system-ui;
-  display:grid;
-  height: 100vh;
-  margin: 1em;
- 
-  background-image: linear-gradient(#efad76,#efc576 67%);
-  background-image: linear-gradient(var(--gradient-color-dark),var(--gradient-color-light) 67%);
+    font-family: "Rubik Spraypaint", system-ui;
+    display:grid;
+    height: 100vh;
+    margin: 0%;
+  
+    background-image: linear-gradient(#efad76,#efc576 67%);
+    background-image: linear-gradient(var(--gradient-color-dark),var(--gradient-color-light) 67%);
 
+  input{
+    display: none;
+
+     }
+
+      form img:nth-of-type(2){
+      display: none;
+     }
+
+  /*
   background-attachment: fixed;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
@@ -36,23 +47,40 @@ body {
     "header"
     "main"
     "footer";
-  gap:1em;
-  
+  gap:1em; 
+  */
 }
-  header {
-    grid-area: "header";
-    h1 {  
-      color: black;
-      
-    }
-    nav {
-      background-color: antiquewhite;
-      
-    }
-  }   
-  
 
-  main {
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: aliceblue;
+    position: sticky;
+    top: 0%;
+    margin: 0%;
+    padding: 0%;
+    height: 100px;
+  
+    h1{
+      align-items: center;
+      display: flex;
+      font-size: 2em;
+      
+    }
+      
+    nav {
+      display: flex;
+      flex-wrap: balance;
+      align-items: center;
+      gap: 2em;
+      font-size: 1em;
+        
+      }
+   }
+
+
+main {
     /* MAIN IMAGE*/
     grid-area: "main";
     button {

@@ -45,7 +45,7 @@ CHECK-OUT (Sprint 3)
 Welke feedback heb je gehad?
 Ik kreeg vandaag niet per se heel veel feedback maar ik kreeg wel te horen dat mijn Gachapon idee het interessante was uit mijn vijf schetsen, dus ga ik daar verder mee.
 
-CHECK-OUT (Sprint 4 : AUG 21)
+CHECK-OUT (Sprint 2 : AUG 21)
 Wat zijn HTML landmark role elements?
 Deze elementen worden gebruikt om belangrijke secties van een webpagina aan te geven, hierdoor kunnen schermlezers en andere hulpmiddelen makkelijker door de inhoud navigeren.
 Wat zijn heading elementen en hoe horen deze 'genest' te worden?
@@ -68,6 +68,10 @@ Noem drie manieren om door een website te navigeren met jouw screenreader.
 Tab
 Shift + Tab
 Pijlen
+
+Check-out (Sprint 2 : AUG 30)
+Waar staat WCAG en A11y voor?:
+WCAG staat voor de Web Content Accessibility Guidelines, dit is een checklist waar de geaccepteerde standaarden van toegangelijkheid worden gecheckt
 
 ### 3 sept - [Workshop]
 
