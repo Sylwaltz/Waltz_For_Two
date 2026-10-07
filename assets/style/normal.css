@@ -1,76 +1,99 @@
-
 @font-face {
   font-family: "Rubik Spraypaint";
   src: url(../type/Coiny-Regular.ttf);
   font-weight: 400;
   font-style: normal;
 }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 /* custom light en dark mode werkt niet :(*/
-html{ 
-    color-scheme: light dark;
-    --gradient-color-light: light-dark(#efc576, midnightblue);
-    --gradient-color-dark:light-dark(#efad76,purple);
-    --header-color:light-dark(#cb9162, DarkSlateBlue)
-  }
-html:has( [value="light-theme"]:checked){
-    color-scheme:light;
-    
+html {
+  color-scheme: light dark;
+  --gradient-color-light: light-dark(#efc576, midnightblue);
+  --gradient-color-dark: light-dark(#efad76, purple);
+  --header-color: light-dark(#cb9162, DarkSlateBlue);
+}
+html:has([value="light-theme"]:checked) {
+  color-scheme: light;
 }
 
-html:has( [value="dark-theme"]:checked){
-    color-scheme:dark;
-    
+html:has([value="dark-theme"]:checked) {
+  color-scheme: dark;
 }
 
 body {
-    font-family: "Rubik Spraypaint", system-ui;
-    display:grid;
-    height: 100vh;
-    margin: 0%;
-  
-    background-image: linear-gradient(#efad76,#efc576 67%);
-    background-image: linear-gradient(var(--gradient-color-dark),var(--gradient-color-light) 67%);
-    background-attachment: fixed;
+  font-family: "Rubik Spraypaint", system-ui;
+  display: grid;
+  height: 100vh;
+  margin: 0%;
 
-  form:nth-of-type(1){
+  background-image: linear-gradient(#efad76, #efc576 67%);
+  background-image: linear-gradient(
+    var(--gradient-color-dark),
+    var(--gradient-color-light) 67%
+  );
+  background-attachment: fixed;
+
+  form:nth-of-type(1) {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    align-items: start;
     position: fixed;
     top: 8.5%;
     bottom: 10%;
     z-index: 100;
     right: 2%;
-
-
-
   }
-  input{
-    display: none;
-     }
-  label img{
-    width: 8em;
-    padding: 0%;
-    margin: 0%;
-    cursor: pointer;
+
+  label {
+    position: relative;
+
     transition: 0.5s ease-in-out;
-  }  
-  label img:nth-of-type(2){
-      display: none;
-     }
-  label input:checked ~ img:nth-of-type(1){
-      display: none; 
+
+    &:hover {
+      transform: translate(-0.1em, -0.1em);
     }
-  label input:checked ~ img:nth-of-type(2){
-      display: inline;
+
+    &:has(input:checked) {
+      filter: drop-shadow(0 0 0.3em lime);
+    }
+
+    &:has(input:focus-visible) {
+      filter: drop-shadow(0 0 0.5em deeppink);
+    }
+
+    input {
+      position: absolute;
+      inset: 0;
+      appearance: none;
+      outline: none;
+    }
+
+    img {
+      display: block;
+      width: 8em;
+      padding: 0%;
+      margin: 0%;
+      cursor: pointer;
+      transition: 0.5s ease-in-out;
+
+      :checked ~ & {
+        display: none;
+      }
+
+      &:nth-of-type(2) {
+        display: none;
+
+        :checked ~ & {
+          display: block;
+        }
+      }
+    }
   }
-
-   label:hover {
-    transform: translate(-.1em, -.1em);
-    transition: 0.5s ease-in-out;
-   }
-
-
 
   /*
   background-attachment: fixed;
@@ -85,127 +108,115 @@ body {
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--header-color);
+  position: sticky;
+  top: 0%;
+  margin: 0%;
+  padding: 0%;
+  height: 5em;
+  border-bottom-left-radius: 15%;
+  border-bottom-right-radius: 15%;
+
+  h1 {
     align-items: center;
-    background-color: var(--header-color);
-    position: sticky;
-    top: 0%;
-    margin: 0%;
-    padding: 0%;
-    height: 5em;
-    border-bottom-left-radius: 15%;
-    border-bottom-right-radius: 15%;
-  
-  
-    h1{
-      align-items: center;
-      display: flex;
-      font-size: 2em;
-      
+    display: flex;
+    font-size: 2em;
+  }
+
+  nav:nth-of-type(1) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2em;
+    font-size: 1em;
+  }
+
+  @media (width < 20em) {
+    header {
+      height: 10em;
     }
-      
-    nav:nth-of-type(1){
+    nav {
       display: flex;
-      flex-direction: row;
-      align-items: center;
-      gap: 2em;
-      font-size: 1em;
-        
-      }
-
-    @media(width < 20em) {
-        header{ 
-          height: 10em;
-        }
-        nav{
-          display: flex;
-          flex-direction: column;
-
-        }
-      }
-   }
-
+      flex-direction: column;
+    }
+  }
+}
 
 main {
-    /* MAIN IMAGE*/
-    grid-area: "main";
-    button {
-      display: flex;
-      margin-right: auto;
-      margin-left: auto;
-      background-color: inherit;
-      border: none;
+  /* MAIN IMAGE*/
+  grid-area: "main";
+  button:nth-of-type(1) {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: inherit;
+    border: none;
     img {
       width: auto;
       height: 50em;
-        /* grid-area: image; */
-        object-fit: cover;
+      object-fit: cover;
+      cursor: pointer;
 
+      /* grid-area: image; 
         @media (max-width: 768px) {
         display:grid;
-        }
+        }*/
+    }
+  }
 
-      }}
+  /* EERSTE POPOVER*/
+  article {
+    border-color: black;
+    background-color: rgb(0 0 0 / 60%);
+    backdrop-filter: blur(2px);
 
-    /* EERSTE POPOVER*/
-    article {
-      border-color: black;
-      background-color: rgb(0 0 0 / 60%);
-      backdrop-filter: blur(2px);
-      
-      
+    img {
+      width: 20em;
+      height: 15em;
+      object-fit: cover;
+    }
+
+    /* TWEEDE POPOVER*/
+    div {
+      border: none;
+      background: none;
       img {
         width: 20em;
-        height: 15em;
+        height: 20em;
         object-fit: cover;
-
-      }
-
-      /* TWEEDE POPOVER*/
-      div {
+        margin: 0;
+        padding: 0;
         border: none;
-        background: none;
-          img { 
-            width: 20em;
-            height: 20em;
-            object-fit: cover;
-            margin: 0;
-            padding: 0;
-            border: none;
-  
 
- @media(width > 20em) {
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas:
-    "header main main"
-    "header footer main"
-   
-          }
+        @media (width > 20em) {
+          display: grid;
+          grid-template-rows: 1fr 1fr;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-areas:
+            "header main main"
+            "header footer main";
+        }
       }
     }
   }
-  
+
   footer {
     grid-area: "footer";
   }
   section {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     background-color: inherit;
     position: relative;
 
     img {
       width: 100%;
       max-width: 20rem;
-      margin-right: auto;
-      margin-left: auto;      
-
     }
 
-  
     @media (min-width: 768px) {
       display: grid;
       grid-area: header;

@@ -79,7 +79,12 @@ Waar staat WCAG en A11y voor?:
   Met welke beperking rekening houden vind je het meest lastig? Vind je dat je beperkt wordt in wat je kunt ontwerpen? Of heb je al manieren gevonden
 - Ik ben nog niet bewust bezig geweest met een beperking, dus ik voel me nog niet heel gelimiteerd. Maar ik denk dat ik wel moeite ga hebben met cognitief
 
-### 3 sept - [Workshop]
+Check-out (Sprint 3 : OKT 5)
+
+- Leg uit wat er met de volgende termen bedoeld wordt: kerning, tracking, leading, flush-left, flush-right, centered, justified, indent, outdent, modular scale, movable type, focus punt, vijf soorten contrast, spatial tension. (Hint, alle termen staan in de artikelen die we samen gelezen hebben)
+  Dit zijn allemaal tyopgrafische termen die ervoor zorgen dat jouw typografie er goed uitziet en harmonie en betekenis aangeeft.
+- Wat is jouw ideale regellengte (measure)? Leg uit waarom.
+- Als je in een ontwerp maar één variabele tot je beschikking had om hiërarchie aan te brengen (grootte, plaatsing, spacing, lettersoorten), welke zou je dan gebruiken en waarom?
 
 [...]
 
