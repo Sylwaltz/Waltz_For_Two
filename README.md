@@ -86,7 +86,21 @@ Check-out (Sprint 3 : OKT 5)
 - Wat is jouw ideale regellengte (measure)? Leg uit waarom.
 - Als je in een ontwerp maar één variabele tot je beschikking had om hiërarchie aan te brengen (grootte, plaatsing, spacing, lettersoorten), welke zou je dan gebruiken en waarom?
 
-[...]
+- Waarom is het goed om een grid in je ontwerp toe te passen? Noem een reden voor de ontwerper en een voor de bezoeker.
+  Een grid is handig om toepassen als ontwerper omdat dit structuur geeft
+- Noem drie manieren om chaos in je ontwerp te voorkomen.
+  Een vaste line-heights en font sizes, grids
+- Hoeveel gekkigheid moet er in je werk zitten?
+  Bomvol
+  [...]
+
+  9-10 AUG
+  FEEDBACK:
+  - Gevoel van liedje is niet passend, wat zachter maken
+  - Deepdives doen om technisch te helpen
+  - Wat meer ruimte tussen woorden en regels
+  - --
+    Heb besloten om de trinkets de vorm te geven van de karakertjes van de light en dark mode, had dit gedaan omdat ik feedback kreeg dat de poppetjes anders weinig waarde toevoegen en er een beetje out of place zijn als ik het hield bij mijn oude concept/idee
 
 ### 31 aug - Kickoff
 

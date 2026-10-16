@@ -10,6 +10,11 @@
   box-sizing: border-box;
 }
 /* custom light en dark mode werkt niet :(*/
+
+/**************************
+* MARK: Custom properties
+**************************/
+
 html {
   color-scheme: light dark;
   --gradient-color-light: light-dark(#efc576, midnightblue);
@@ -24,6 +29,10 @@ html:has([value="dark-theme"]:checked) {
   color-scheme: dark;
 }
 
+/**************************
+* MARK: Algemene
+**************************/
+
 body {
   font-family: "Rubik Spraypaint", system-ui;
   display: grid;
@@ -37,6 +46,10 @@ body {
   );
   background-attachment: fixed;
 
+/**************************
+* MARK: Light-Dark-Styling
+**************************/
+
   form:nth-of-type(1) {
     display: flex;
     flex-direction: row;
@@ -45,14 +58,14 @@ body {
     position: fixed;
     top: 8.5%;
     bottom: 10%;
-    z-index: 100;
+    z-index: 100%;
     right: 2%;
   }
 
   label {
     position: relative;
 
-    transition: 0.5s ease-in-out;
+    transition: 0.4s ease-in-out;
 
     &:hover {
       transform: translate(-0.1em, -0.1em);
@@ -95,17 +108,17 @@ body {
     }
   }
 
-  /*
-  background-attachment: fixed;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas:  
-    "header"
-    "main"
-    "footer";
-  gap:1em; 
-  */
+  label:nth-of-type(2) {
+    img {
+      width: 7em;
+    }
+  }
+
 }
+
+/**************************
+* MARK: Header
+**************************/
 
 header {
   display: flex;
@@ -133,17 +146,16 @@ header {
     gap: 2em;
     font-size: 1em;
   }
-
-  @media (width < 20em) {
-    header {
-      height: 10em;
-    }
     nav {
       display: flex;
       flex-direction: column;
     }
   }
-}
+
+
+/**************************
+* MARK: Main
+**************************/
 
 main {
   /* MAIN IMAGE*/
@@ -158,16 +170,24 @@ main {
       width: auto;
       height: 50em;
       object-fit: cover;
-      cursor: pointer;
-
-      /* grid-area: image; 
-        @media (max-width: 768px) {
-        display:grid;
-        }*/
     }
   }
 
-  /* EERSTE POPOVER*/
+ button:nth-of-type(2) {
+    background-color: inherit;
+    border: none;
+    z-index: 50;
+    position: relative;
+    left: 35.2rem;
+    bottom: 16.3rem;
+      img {
+        object-fit: cover;
+        width: 5.9rem;
+        cursor: pointer;
+      }
+}
+
+  /* EERSTE POPOVER
   article {
     border-color: black;
     background-color: rgb(0 0 0 / 60%);
@@ -179,7 +199,7 @@ main {
       object-fit: cover;
     }
 
-    /* TWEEDE POPOVER*/
+    TWEEDE POPOVER
     div {
       border: none;
       background: none;
@@ -221,5 +241,5 @@ main {
       display: grid;
       grid-area: header;
     }
-  }
+  } */
 }
