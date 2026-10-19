@@ -1,0 +1,72 @@
+/* MARK: fonts */
+@font-face {
+  font-family: "Seraphs";
+  src: url("./SeraphsVF.woff2") format("woff2"); /* Modern Browsers */
+}
+/* MARK: items */
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Seraphs";
+  font-size: 3vw;
+}
+
+h1 {
+  font-family: "Seraphs";
+  font-size: 5vw;
+  font-variation-settings: "WGTH" 100;
+}
+body {
+  font-variation-settings: "SRFS" 50;
+  line-height: 3em;
+  display: grid;
+  font-family: "Seraphs";
+  justify-content: center;
+  column-gap: 10em;
+}
+
+main {
+  position: relative;
+  display: grid;
+  font-size: clamp(2vw, 3vw, 2vw);
+  overflow-y: visible;  
+}
+
+.Intro {
+  transform: skew(-20deg) translate(-1.5em);
+  text-align: right;
+  font-size: 5vw;
+  line-height: 2em;
+}
+
+.Verse1 {
+  em {
+    text-shadow: grey 2px 5px;
+  }
+}
+
+.Verse2 {
+}
+
+.Verse3 {
+  ul {
+    list-style-type: none;
+
+    li:nth-of-type(3) {
+      letter-spacing: 0.2rem;
+      text-shadow: grey 5px 2px;
+    }
+  }
+}
+
+.Chorus {
+
+}
+
+.Outro {
+  transform: skew(20deg) translate(-1.5em);
+  text-align: left;
+  font-size: 5vw;
+  line-height: 2em;
+}
