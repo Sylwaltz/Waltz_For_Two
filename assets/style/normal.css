@@ -9,7 +9,6 @@
 *::after {
   box-sizing: border-box;
 }
-/* custom light en dark mode werkt niet :(*/
 
 /**************************
 * MARK: Custom properties
@@ -178,13 +177,78 @@ main {
     border: none;
     z-index: 50;
     position: relative;
-    left: 35.2rem;
+    left: 44.2rem;
     bottom: 16.3rem;
+
       img {
         object-fit: cover;
         width: 5.9rem;
-        cursor: pointer;
-      }
+        cursor: pointer; 
+  }
+} 
+
+
+/**************************
+* MARK: Button
+**************************/
+/* code geholpen door Sanne */
+
+ul {
+  padding:0;
+  margin:0;
+  list-style-type: "";
+}
+
+li {
+  width:8em;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  position: fixed; 
+  left: calc(60% - 4em);
+  bottom:calc(20% - 4em);
+  opacity:0;
+  scale:0;
+
+  &.is-pulled {
+    transition: 
+      left .5s,
+      opacity .2s,
+      scale .5s,
+      bottom .5s,
+
+      --base .5s 1.5s,
+      --distance .5s 1.5s,
+    left:calc(50% - 4em);
+    bottom:calc(50% - 4em);
+    opacity:1;
+    scale:1;
+
+    --base:1;
+    transform:
+    rotate( calc( var(--rotate) * 360deg ) )
+    translateY( calc( var(--base) * 20vmin + var(--distance) * 40vmin) )
+    rotate( calc( var(--rotate)* -360deg ))
+  }
+
+  &::before {
+    content:"";
+    position: absolute;
+    inset: 0 0 50% 0;
+    border-radius:50% 50% 1px 1px / 100% 100% 1px 1px;
+    
+  }
+}
+
+  @property --distance {
+	syntax:"<number>";
+	initial-value:0;
+	inherits:true;
+}
+
+@property --base {
+	syntax:"<number>";
+	initial-value:0;
+	inherits:true;
 }
 
   /* EERSTE POPOVER

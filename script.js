@@ -1,10 +1,10 @@
 const gachaponButton = document.querySelector("button")
 
-gachaponButton.onclick = GiveCapsule
+gachaponButton.onclick = giveCapsule
 
-Function GiveCapsule {
+function giveCapsule() {
     const theCaps = document.querySelector("ul")
-    const theNextCap = document.querySelector("li:not(.is-pulled")
+    const theNextCap = document.querySelector("li:not(.is-pulled)")
 
     if (theNextCap) {
         const rotate = Math.random();
@@ -15,6 +15,6 @@ Function GiveCapsule {
         theNextCap.style.setProperty("--distance", distance);
         theNextCap.style.setProperty("images", images);
 
-        theNextCap.classList.add("is-getrokken")
+        theNextCap.classList.add("is-pulled")
     }
 }
