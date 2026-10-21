@@ -16,9 +16,11 @@
 
 html {
   color-scheme: light dark;
-  --gradient-color-light: light-dark(#efc576, midnightblue);
-  --gradient-color-dark: light-dark(#efad76, purple);
-  --header-color: light-dark(#cb9162, DarkSlateBlue);
+  --gradient-color-light: light-dark(#fae586 , #b5dbf0);
+  --gradient-color-dark: light-dark(#bcce77, #599bbc );
+  --header-color: light-dark(#91AD6C, #1b5273);
+  --lines-color: light-dark(#FFFFFF70, #FFFFFF30)
+  ;
 }
 html:has([value="light-theme"]:checked) {
   color-scheme: light;
@@ -38,11 +40,40 @@ body {
   height: 100vh;
   margin: 0%;
 
-  background-image: linear-gradient(#efad76, #efc576 67%);
-  background-image: linear-gradient(
-    var(--gradient-color-dark),
-    var(--gradient-color-light) 67%
+/**************************
+* MARK: Background
+**************************/
+  background-image: linear-gradient(#efad76, #efc576);
+  background-image: 
+    linear-gradient(
+      to bottom,
+      transparent,
+      transparent
+    ),
+    linear-gradient(
+      to right,
+      var(--lines-color) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      to bottom,
+      var(--lines-color) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+    to bottom,
+    var(--gradient-color-light),
+    var(--gradient-color-dark)90% 
   );
+
+  background-size:
+    100% 100%,
+    40px 40px,
+    40px 40px,
+    100% 100%;
+
+
+
   background-attachment: fixed;
 
 /**************************
@@ -173,6 +204,7 @@ main {
   }
 
  button:nth-of-type(2) {
+    display: flex;
     background-color: inherit;
     border: none;
     z-index: 50;
@@ -192,6 +224,18 @@ main {
 * MARK: Button
 **************************/
 /* code geholpen door Sanne */
+
+@property --distance {
+	syntax:"<number>";
+	initial-value:0;
+	inherits:true;
+}
+
+@property --base {
+	syntax:"<number>";
+	initial-value:0;
+	inherits:true;
+}
 
 ul {
   padding:0;
@@ -227,29 +271,51 @@ li {
     transform:
     rotate( calc( var(--rotate) * 360deg ) )
     translateY( calc( var(--base) * 20vmin + var(--distance) * 40vmin) )
-    rotate( calc( var(--rotate)* -360deg ))
-  }
+    rotate( calc( var(--rotate)* -360deg ));
+}
 
   &::before {
     content:"";
     position: absolute;
     inset: 0 0 50% 0;
     border-radius:50% 50% 1px 1px / 100% 100% 1px 1px;
+    background-image: url("/images/images-web/Capsule-TOP.png");
+    box-shadow:
+    inset .5em 1em 1em #fff6,
+    inset 0 -1px hsl(calc(var(--images) * 360) 100% 25% / .25)
+}
+
+  &.is-pulled::before {
+    transition:  .5s 1s,
+    rotate .5s 1s,
+    opacity .5s 1s;
+    translate: 0 -60vw;
+    rotate:1turn;
+    opacity:0;
+    pointer-events:none;
+}
+  &::after {
+    content:"";
+    position: absolute;
+    inset:50% 0 0 0;
+    border-radius:1px 1px 50% 50% /1px 1px 100% 100%;
     
+    background-image:
+      radial-gradient(
+        circle at 67% 67%,
+        hsl( calc(var(--images)*360 ) 100% 20%),
+        hsl( calc(var(--images)*360) 100% 50%)
+      );
+  box-shadow:
+    inset 0 1px hsl(calc(var(--images)* 360) 100% 90% / .5s),
+    inset -.5em -1em 1em hsl(calc(var(--images) * 360) 100% 10% / .5 ),
+		inset .5em 0 1em hsl(calc(var(--images) * 360) 100% 90% / .5 );
+	}
+
+
   }
 }
 
-  @property --distance {
-	syntax:"<number>";
-	initial-value:0;
-	inherits:true;
-}
-
-@property --base {
-	syntax:"<number>";
-	initial-value:0;
-	inherits:true;
-}
 
   /* EERSTE POPOVER
   article {

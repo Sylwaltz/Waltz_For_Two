@@ -13,7 +13,7 @@ function giveCapsule() {
 
         theNextCap.style.setProperty("--rotate", rotate);
         theNextCap.style.setProperty("--distance", distance);
-        theNextCap.style.setProperty("images", images);
+        theNextCap.style.setProperty("--images", images);
 
         theNextCap.classList.add("is-pulled")
     }
