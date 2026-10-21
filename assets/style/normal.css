@@ -3,6 +3,10 @@
   src: url(../type/Coiny-Regular.ttf);
   font-weight: 400;
   font-style: normal;
+@font-face {
+  font-family: "Rampart";
+  src: url(../type/RampartOne-Regular.ttf);
+}
 }
 *,
 *::before,
@@ -84,9 +88,9 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    align-items: start;
+    align-self: start;
     position: fixed;
-    top: 8.5%;
+    top: 7%;
     bottom: 10%;
     z-index: 100%;
     right: 2%;
@@ -124,6 +128,10 @@ body {
       cursor: pointer;
       transition: 0.5s ease-in-out;
 
+      @media (width < 40em) {
+        width: 5.5em;
+      }
+
       :checked ~ & {
         display: none;
       }
@@ -133,6 +141,8 @@ body {
 
         :checked ~ & {
           display: block;
+  
+      }
         }
       }
     }
@@ -141,10 +151,12 @@ body {
   label:nth-of-type(2) {
     img {
       width: 7em;
+
+      @media (width < 40em){
+        width: 5.5em;
+      }
     }
   }
-
-}
 
 /**************************
 * MARK: Header
@@ -154,14 +166,18 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--header-color);
+  background-image: 
+  linear-gradient(to bottom,
+  var(--header-color),
+  transparent 60px);
   position: sticky;
   top: 0%;
   margin: 0%;
   padding: 0%;
-  height: 5em;
-  border-bottom-left-radius: 15%;
-  border-bottom-right-radius: 15%;
+  height: 4em;
+
+  /* border-bottom-left-radius: 15%;
+  border-bottom-right-radius: 15%; */
 
   h1 {
     align-items: center;
@@ -190,7 +206,7 @@ header {
 main {
   /* MAIN IMAGE*/
   grid-area: "main";
-  button:nth-of-type(1) {
+  > button:nth-of-type(1) {
     display: flex;
     margin-right: auto;
     margin-left: auto;
@@ -203,7 +219,7 @@ main {
     }
   }
 
- button:nth-of-type(2) {
+ > button:nth-of-type(2) {
     display: flex;
     background-color: inherit;
     border: none;
@@ -212,13 +228,20 @@ main {
     left: 44.2rem;
     bottom: 16.3rem;
 
+    @media (width < 40em){
+          z-index: 50;
+          position: relative;
+          left: 12.6rem;
+          bottom: 16.3rem;
+        }
+
       img {
         object-fit: cover;
         width: 5.9rem;
         cursor: pointer; 
-  }
-} 
-
+   }
+  } 
+}
 
 /**************************
 * MARK: Button
@@ -249,9 +272,15 @@ li {
   border-radius: 50%;
   position: fixed; 
   left: calc(60% - 4em);
-  bottom:calc(20% - 4em);
+  bottom: calc(10% - 4em);
   opacity:0;
   scale:0;
+
+  button {
+    appearance: none;
+    background:none;
+    border:none;
+  }
 
   &.is-pulled {
     transition: 
@@ -261,7 +290,7 @@ li {
       bottom .5s,
 
       --base .5s 1.5s,
-      --distance .5s 1.5s,
+      --distance .5s 1.5s;
     left:calc(50% - 4em);
     bottom:calc(50% - 4em);
     opacity:1;
@@ -270,25 +299,31 @@ li {
     --base:1;
     transform:
     rotate( calc( var(--rotate) * 360deg ) )
-    translateY( calc( var(--base) * 20vmin + var(--distance) * 40vmin) )
+    translateY( calc( var(--base) * 10vmin + var(--distance) * 30vmin) )
     rotate( calc( var(--rotate)* -360deg ));
 }
 
   &::before {
     content:"";
     position: absolute;
+    z-index: 10;
     inset: 0 0 50% 0;
     border-radius:50% 50% 1px 1px / 100% 100% 1px 1px;
-    background-image: url("/images/images-web/Capsule-TOP.png");
+    /* background-color: red; */
+    background-image: url("/images/images-web/Capsule-TOP.png" );
+    background-size: 100% auto;
+    background-repeat: no-repeat;
     box-shadow:
-    inset .5em 1em 1em #fff6,
-    inset 0 -1px hsl(calc(var(--images) * 360) 100% 25% / .25)
+    inset 0 -1px hsl(calc(var(--images) * 360) 100% 25% / .25);
+
+    /* translate:0 .3em; */
 }
 
   &.is-pulled::before {
-    transition:  .5s 1s,
-    rotate .5s 1s,
-    opacity .5s 1s;
+    transition:
+      translate .5s 1s,
+      rotate .5s 1s,
+      opacity .5s 1s;
     translate: 0 -60vw;
     rotate:1turn;
     opacity:0;
@@ -298,9 +333,18 @@ li {
     content:"";
     position: absolute;
     inset:50% 0 0 0;
+
+     translate:0 -.3em;
+
     border-radius:1px 1px 50% 50% /1px 1px 100% 100%;
+    /* background-color: green; */
+    background-image: url("/images/images-web/Capsule-BOTTOM-Blue.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+
+    filter:hue-rotate( calc(var(--images) * 360deg ));
     
-    background-image:
+    /* background-image:
       radial-gradient(
         circle at 67% 67%,
         hsl( calc(var(--images)*360 ) 100% 20%),
@@ -310,11 +354,31 @@ li {
     inset 0 1px hsl(calc(var(--images)* 360) 100% 90% / .5s),
     inset -.5em -1em 1em hsl(calc(var(--images) * 360) 100% 10% / .5 ),
 		inset .5em 0 1em hsl(calc(var(--images) * 360) 100% 90% / .5 );
-	}
+	} */
+  }
 
+  &.is-pulled::after {
+    translate: 0 60vw;
+    rotate: -1turn;
+    opacity:0;
 
+    transition:
+      translate .5s 1s,
+      rotate .5s 1s,
+      opacity .5s 1s;
+    pointer-events:none;
+  }
+
+  img {
+    width:80%;
   }
 }
+
+  #cookieModal {
+    background-color: #1b5273;
+    border: none;
+  }
+
 
 
   /* EERSTE POPOVER
@@ -372,4 +436,3 @@ li {
       grid-area: header;
     }
   } */
-}

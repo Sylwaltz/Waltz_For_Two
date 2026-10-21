@@ -1,4 +1,4 @@
-const gachaponButton = document.querySelector("button")
+const gachaponButton = document.querySelector("button:nth-of-type(2)")
 
 gachaponButton.onclick = giveCapsule
 
