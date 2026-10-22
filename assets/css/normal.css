@@ -202,6 +202,8 @@ header {
     font-size: 1em;
     
   }
+
+  /* gebruik van een id toen ik ging debuggen met chatgpt*/
    #cookieButton{
     transition: .2s ease-in;
     background-color: inherit;
