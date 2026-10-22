@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="[Susanne Quan]" />
     <meta name="color-scheme" content="dark light" />
-    <meta name="description" content="An interactive gachapon machine filled with my favorite trinkets in the form of my original characters!" />
+    <meta
+      name="description"
+      content="An interactive gachapon machine filled with my favorite trinkets in the form of my original characters!"
+    />
 
     <title>Syl's gachapon</title>
     <link rel="stylesheet" href="./assets/css/normal.css" />
-    <link rel="icon"
-          href="/images/images-web/ActualGachapon.png"/>
+    <link rel="icon" href="/images/images-web/ActualGachapon.png" />
 
     <!-- Importeer het webring component, voeg jouw eigen domein toe in data-page -->
     <script
@@ -25,23 +27,6 @@
     <!-- Bovenste banner -->
     <header>
       <h1>Memory Gacha</h1>
-      <nav>
-        <a href="./CODE/spinvis.html"> Experiment</a>
-        <button commandfor="cookieModal" command="show-modal" id="cookieButton">
-          <img src="./images/images-web/Cookie-Mattias.png"
-          alt="Cookie button"/>
-        </button>
-
-    <dialog id="cookieModal">
-      <form method="dialog">
-        <p lang="en">
-         This site uses 
-        </p>
-        <button value= "accept" onclick="acceptCookie()">Allow</button>
-        <button value= "deny" onclick="denyCookie()">Deny</button>
-      </form>
-    </dialog>
-      </nav>
     </header>
 
     <!-- Light and Dark mode -->
@@ -152,10 +137,28 @@
       </article> -->
     </main>
     <footer>
+      <nav>
+        <button commandfor="cookieModal" command="show-modal" id="cookieButton">
+          <img
+            src="./images/images-web/Cookie-Mattias.png"
+            alt="Cookie button"
+          />
+        </button>
+
+        <dialog id="cookieModal">
+          <form method="dialog">
+            <p lang="en">This site uses</p>
+            <button value="accept" onclick="acceptCookie()">Allow</button>
+            <button value="deny" onclick="denyCookie()">Deny</button>
+          </form>
+        </dialog>
+        <a href="./CODE/spinvis.html"> Experiment</a>
+      </nav>
+    </footer>
   </body>
 </html>
-<!-- <footer>
-      <p>[Copyleft 2026, all wrongs reversed]</p>
+
+<!-- <p>[Copyleft 2026, all wrongs reversed]</p>
        <ul>
           <li><a href="/">[Home]</a></li>
           <li><a href="/log.html">[Log]</a></li>
