@@ -1,13 +1,18 @@
 @font-face {
-  font-family: "Rubik Spraypaint";
-  src: url(../type/Coiny-Regular.ttf);
+  font-family: "RampartOne";
+  src:
+  url(../fonts/RampartOne-Regular.ttf);
   font-weight: 400;
   font-style: normal;
+}
 @font-face {
-  font-family: "Rampart";
-  src: url(../type/RampartOne-Regular.ttf);
+  font-family: "Rubik Spraypaint";
+  src:
+  url(../fonts/RampartOne-Regular.ttf);
+  font-weight: 400;
+  font-style: normal;
 }
-}
+
 *,
 *::before,
 *::after {
@@ -37,7 +42,9 @@ html:has([value="dark-theme"]:checked) {
 /**************************
 * MARK: Algemene
 **************************/
-
+h1 {
+  font-family: "RampartOne", Verdana;
+}
 body {
   font-family: "Rubik Spraypaint", system-ui;
   display: grid;
@@ -99,7 +106,7 @@ body {
   label {
     position: relative;
 
-    transition: 0.4s ease-in-out;
+    transition: 0.2s ease-in;
 
     &:hover {
       transform: translate(-0.1em, -0.1em);
@@ -114,6 +121,8 @@ body {
     }
 
     input {
+      padding: 0;
+      margin: 0;
       position: absolute;
       inset: 0;
       appearance: none;
@@ -126,7 +135,7 @@ body {
       padding: 0%;
       margin: 0%;
       cursor: pointer;
-      transition: 0.5s ease-in-out;
+
 
       @media (width < 40em) {
         width: 5.5em;
@@ -175,6 +184,7 @@ header {
   margin: 0%;
   padding: 0%;
   height: 4em;
+  
 
   /* border-bottom-left-radius: 15%;
   border-bottom-right-radius: 15%; */
@@ -185,20 +195,26 @@ header {
     font-size: 2em;
   }
 
-  nav:nth-of-type(1) {
+  nav {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 2em;
     font-size: 1em;
+    
   }
-    nav {
-      display: flex;
-      flex-direction: column;
-    }
+  > nav > button {
+    transition: .2s ease-in;
+    background-color: inherit;
+    border: none;
   }
-
-
+  > nav > button > img {
+    width: 5em;
+  }
+  }
+  body.eatCookie img {
+    content:url("/images/images-web/Cookie-eaten-Mattias.png") / "acceptedCookie";
+  }
 /**************************
 * MARK: Main
 **************************/
@@ -298,8 +314,9 @@ li {
 
     --base:1;
     transform:
+    /* veranderen van distance hier*/
     rotate( calc( var(--rotate) * 360deg ) )
-    translateY( calc( var(--base) * 10vmin + var(--distance) * 30vmin) )
+    translateY( calc( var(--base) * 25vmin + var(--distance) * 30vmin) )
     rotate( calc( var(--rotate)* -360deg ));
 }
 
@@ -309,7 +326,7 @@ li {
     z-index: 10;
     inset: 0 0 50% 0;
     border-radius:50% 50% 1px 1px / 100% 100% 1px 1px;
-    /* background-color: red; */
+
     background-image: url("/images/images-web/Capsule-TOP.png" );
     background-size: 100% auto;
     background-repeat: no-repeat;

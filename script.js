@@ -1,4 +1,4 @@
-const gachaponButton = document.querySelector("button:nth-of-type(2)")
+const gachaponButton = document.querySelector("main > button:nth-of-type(2)")
 
 gachaponButton.onclick = giveCapsule
 
@@ -17,4 +17,13 @@ function giveCapsule() {
 
         theNextCap.classList.add("is-pulled")
     }
+}
+
+function acceptCookie() {
+    const cookieButton = document.querySelector("body > nav > button > img ")
+    document.body.classList.add("eatCookie");
+}
+
+function denyCookie() {
+    document.body.classList.remove("eatCookie");
 }
