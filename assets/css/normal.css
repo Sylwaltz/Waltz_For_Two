@@ -170,7 +170,6 @@ body {
 /**************************
 * MARK: Header
 **************************/
-
 header {
   display: flex;
   justify-content: space-between;
@@ -203,18 +202,21 @@ header {
     font-size: 1em;
     
   }
-  > nav > button {
+   #cookieButton{
     transition: .2s ease-in;
     background-color: inherit;
     border: none;
-  }
-  > nav > button > img {
+    
+    &:hover {
+      transform: translate(-0.1em, -0.1em);
+    }
+  img {
     width: 5em;
   }
-  }
-  body.eatCookie img {
-    content:url("/images/images-web/Cookie-eaten-Mattias.png") / "acceptedCookie";
-  }
+  } 
+}
+body.eatCookie #cookieButton img {
+    content:url("/images/images-web/Cookie-eaten-Mattias.png") / "acceptedCookie";}
 /**************************
 * MARK: Main
 **************************/

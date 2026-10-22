@@ -19,8 +19,9 @@ function giveCapsule() {
     }
 }
 
+
+
 function acceptCookie() {
-    const cookieButton = document.querySelector("body > nav > button > img ")
     document.body.classList.add("eatCookie");
 }
 
