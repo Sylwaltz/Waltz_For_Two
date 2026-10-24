@@ -22,11 +22,16 @@
 /**************************
 * MARK: Custom properties
 **************************/
-
-html {
+html, body {
+  overflow: hidden;
   margin: 0;
   padding: 0;
-  height: 100%;
+  height: 100vh;
+  width: 100vw;
+}
+
+
+html {
   color-scheme: light dark;
   --gradient-color-light: light-dark(#fae586 , #b5dbf0);
   --gradient-color-dark: light-dark(#bcce77, #599bbc );
@@ -51,8 +56,8 @@ h1 {
 body {
   font-family: "Rubik Spraypaint", system-ui;
   display: grid;
-  height: 100vh;
   margin: 0%;
+  padding: 0;
 
 /**************************
 * MARK: Background
@@ -93,6 +98,7 @@ body {
 /**************************
 * MARK: Light-Dark-Styling
 **************************/
+/* Button gemaakt met behulp van de Light/dark & button/states deepdives, Sanne en chatgpt voor debuggen*/
 
   form:nth-of-type(1) {
     padding: 0%;
@@ -112,9 +118,36 @@ body {
 
     transition: 0.2s ease-in;
 
-    &:hover {
+      &:hover:nth-of-type(1) {
       transform: translate(-0.1em, -0.1em);
+      content: url("/images/images-web/Mattias-HOVER.png");
+      width: 8em;
     }
+
+      &:hover:nth-of-type(2) {
+      transform: translate(-0.1em, -0.1em);
+
+    }
+
+    &:hover:nth-of-type(3) {
+      transform: translate(-0.1em, -0.1em);
+      content: url("/images/images-web/Vince-HOVER.png");
+      width: 8em;
+
+    }
+
+    &:has(input:checked):hover:nth-of-type(1) {
+      transform: translate(-0.1em, -0.1em);
+      content: url("/images/images-web/Mattias-ON.png");
+      width: 8em;
+    }
+
+    &:has(input:checked):hover:nth-of-type(3) {
+      transform: translate(-0.1em, -0.1em);
+      content: url("/images/images-web/Vince-ON.png");
+      width: 8em;
+    }
+
 
     &:has(input:checked) {
       filter: drop-shadow(0 0 0.3em lime);
@@ -123,6 +156,10 @@ body {
     &:has(input:focus-visible) {
       filter: drop-shadow(0 0 0.5em deeppink);
     }
+
+    
+
+
 
     input {
       padding: 0;
@@ -185,13 +222,14 @@ header {
   top: 0%;
   margin: 0%;
   padding: 0%;
-  height: 4em;
+  height: 6em;
   
 
   /* border-bottom-left-radius: 15%;
   border-bottom-right-radius: 15%; */
 
   h1 {
+    padding: 1%;
     align-items: center;
     display: flex;
     font-size: 2em;
@@ -199,7 +237,8 @@ header {
 }
 
 footer {
-  position: sticky;
+  position: fixed;
+  bottom: 0; 
 
   nav {
     display: flex;
@@ -210,6 +249,10 @@ footer {
     
   }
 
+
+/**************************
+* MARK: Cookie Button
+**************************/
   /* gebruik van een id toen ik ging debuggen met chatgpt*/
    #cookieButton{
     transition: .2s ease-in;
@@ -227,6 +270,7 @@ footer {
 }
 body.eatCookie #cookieButton img {
     content:url("/images/images-web/Cookie-eaten-Mattias.png") / "acceptedCookie";}
+
 /**************************
 * MARK: Main
 **************************/
@@ -241,7 +285,7 @@ main {
     border: none;
     img {
       width: auto;
-      height: 50em;
+      height: 55rem;
       object-fit: cover;
     }
   }
@@ -252,30 +296,33 @@ main {
     border: none;
     z-index: 50;
     position: relative;
-    left: 44.2rem;
-    bottom: 16.3rem;
+    left: calc(50% - 4.2rem);
+    bottom: calc(50% - 9.9rem);
     transition: transform 1.0s ease-in-out;
 
     @media (width < 40em){
           z-index: 50;
           position: relative;
-          left: 12.6rem;
-          bottom: 16.3rem;
+          left: calc(50% - 4.5.6rem);
+          bottom: calc(50% - 10.1rem);
         }
+      
+    &:hover {
+      filter: drop-shadow(0 0 0.3em white);
+    }
     &:active {
     transform: rotate(300deg);
     }
 
       img {
-        object-fit: cover;
-        width: 5.9rem;
+        width: 7.5rem;
         cursor: pointer; 
    }
   } 
 }
 
 /**************************
-* MARK: Button
+* MARK: Gacha Button
 **************************/
 /* code geholpen door Sanne */
 
@@ -306,12 +353,18 @@ li {
   bottom: calc(10% - 4em);
   opacity:0;
   scale:0;
+  z-index: 100;
 
   button {
+    display: block;
+    border-radius: 50%;
     appearance: none;
     background:none;
     border:none;
+    padding: .5em;
+    cursor: pointer;
   }
+  
 
   &.is-pulled {
     transition: 
@@ -332,14 +385,13 @@ li {
     transform:
     /* veranderen van distance hier*/
     rotate( calc( var(--rotate) * 360deg ) )
-    translateY( calc( var(--base) * 25vmin + var(--distance) * 35.5vmin) )
+    translateY( calc( var(--base) * 25vmin + var(--distance) * 30vmin) )
     rotate( calc( var(--rotate)* -360deg ));
 }
 
   &::before {
     content:"";
     position: absolute;
-    z-index: 10;
     inset: 0 0 50% 0;
     border-radius:50% 50% 1px 1px / 100% 100% 1px 1px;
 
@@ -347,7 +399,7 @@ li {
     background-size: 100% auto;
     background-repeat: no-repeat;
     box-shadow:
-    inset 0 -1px hsl(calc(var(--images) * 360) 100% 25% / .25);
+    inset 0 -1px hsl(calc(var(--images) * 360) 100% 25% / .55);
 
     /* translate:0 .3em; */
 }
@@ -409,7 +461,7 @@ li {
 
   #cookieModal {
     background-color: #1b5273;
-    border: none;
+  
   }
 
 

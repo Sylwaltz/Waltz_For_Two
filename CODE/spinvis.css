@@ -27,31 +27,45 @@ body {
 }
 
 main {
-  position: relative;
+  width: 70em;
+  position: absolute;
+  padding: 5%;
   display: grid;
-  font-size: clamp(2vw, 3vw, 2vw);
-  overflow-y: visible;  
-}
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 100px 100px 100px;
+  font-size: clamp(1vw, 2vw, 1vw);
+
 
 .Intro {
-  transform: skew(-20deg) translate(-1.5em);
-  text-align: right;
-  font-size: 5vw;
-  line-height: 2em;
-}
+  display: grid;
+  gap: 1.5em;
+  padding: 20%;
+  font-size: 2vw;
+ 
+  li {
+    font-size: 1.5vw;
+    grid-column-start:1;
+    grid-column-end: 4;
+    list-style-type: none;
+  }
+   
+  li:nth-of-type(2){
+    font-size: 1.5vw;
+    left: 100px;
+  }
 
-.Verse1 {
-  em {
-    text-shadow: grey 2px 5px;
+
+  li:nth-of-type(3){
   }
 }
+
 
 .Verse2 {
 }
 
 .Verse3 {
   ul {
-    list-style-type: none;
+    list-style-type: none;}
 
     li:nth-of-type(3) {
       letter-spacing: 0.2rem;
@@ -70,3 +84,4 @@ main {
   font-size: 5vw;
   line-height: 2em;
 }
+
