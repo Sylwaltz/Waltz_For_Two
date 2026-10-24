@@ -222,7 +222,7 @@ header {
   top: 0%;
   margin: 0%;
   padding: 0%;
-  height: 6em;
+  height: 4.5em;
   
 
   /* border-bottom-left-radius: 15%;
@@ -264,7 +264,7 @@ footer {
     }
   img {
     display: block;
-    width: 8em;
+    width: 6em;
   }
   } 
 }
@@ -285,7 +285,7 @@ main {
     border: none;
     img {
       width: auto;
-      height: 55rem;
+      height: 41.5rem;
       object-fit: cover;
     }
   }
@@ -296,14 +296,14 @@ main {
     border: none;
     z-index: 50;
     position: relative;
-    left: calc(50% - 4.2rem);
-    bottom: calc(50% - 9.9rem);
+    left: calc(50% - 3.4rem);
+    bottom: calc(50% - 7.5rem);
     transition: transform 1.0s ease-in-out;
 
     @media (width < 40em){
           z-index: 50;
           position: relative;
-          left: calc(50% - 4.5.6rem);
+          left: calc(50% - 4.6rem);
           bottom: calc(50% - 10.1rem);
         }
       
@@ -315,7 +315,7 @@ main {
     }
 
       img {
-        width: 7.5rem;
+        width: 5.9rem;
         cursor: pointer; 
    }
   } 
