@@ -4,18 +4,36 @@
   src: url("./SeraphsVF.woff2") format("woff2"); /* Modern Browsers */
 }
 /* MARK: items */
+
+html {
+  height: 100%;
+  margin: 0%;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
 h2,
 h3,
 h4,
 h5 {
   font-family: "Seraphs";
-  font-size: 3vw;
+  font-size: 2vw;
 }
 
 h1 {
   font-family: "Seraphs";
-  font-size: 5vw;
+  font-size: 3vw;
   font-variation-settings: "WGTH" 100;
+  animation: fadeIn;
+  animation-timeline: view();
 }
 body {
   font-variation-settings: "SRFS" 50;
@@ -27,49 +45,80 @@ body {
 }
 
 main {
+  height: 100%;
   width: 70em;
-  position: absolute;
   padding: 5%;
   display: grid;
-  grid-template-columns: 33% 33% 33%;
-  grid-template-rows: 100px 100px 100px;
+  grid-template-columns: repeat(6, minmax(3em));
+  grid-template-rows: repeat(6, minmax(3em));
   font-size: clamp(1vw, 2vw, 1vw);
 
 
 .Intro {
   display: grid;
-  gap: 1.5em;
+  grid-column: 1/6;
+  gap: 2em;
   padding: 20%;
   font-size: 2vw;
+  list-style-type: none;
  
-  li {
+
+  
+  li:nth-of-type(1) {
+    grid-area: 1 / 2 /4 /7;
     font-size: 1.5vw;
-    grid-column-start:1;
-    grid-column-end: 4;
-    list-style-type: none;
   }
    
   li:nth-of-type(2){
-    font-size: 1.5vw;
-    left: 100px;
+    grid-area: 2 / 2 /4 /7;
+    font-size: 1vw;
+    text-align: right;
+    
   }
 
 
   li:nth-of-type(3){
+    grid-area: 3 / 5 /5 /7;
+    text-indent: 30%;
+     font-size: 1vw;
+    text-align: right;
   }
+
+  li:nth-of-type(4){
+    grid-area: 4 / 5 /5 /7;
+  }
+}
+
+.Verse1 {
+  animation: fadeIn;
+  animation-timeline: view();
 }
 
 
 .Verse2 {
+  animation: fadeIn;
+  animation-timeline: view();
 }
 
 .Verse3 {
+  grid-row-start: 3;
+  grid-row-end: 7;
+  animation: fadeIn;
+  animation-timeline: view();
   ul {
     list-style-type: none;}
 
     li:nth-of-type(3) {
       letter-spacing: 0.2rem;
       text-shadow: grey 5px 2px;
+    }
+
+    li:nth-of-type(5){
+      color: rgba(0, 0, 0, 0.471);
+    }
+
+    li:nth-of-type(6) {
+      color: rgba(0, 0, 0, 0.29);
     }
   }
 }
@@ -83,5 +132,9 @@ main {
   text-align: left;
   font-size: 5vw;
   line-height: 2em;
+}
+
+#droom {
+  text-align:center;
 }
 
