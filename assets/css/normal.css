@@ -46,7 +46,17 @@ html:has([value="light-theme"]:checked) {
 html:has([value="dark-theme"]:checked) {
   color-scheme: dark;
 }
-
+    @keyframes --trinket-animation {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
 /**************************
 * MARK: Algemene
 **************************/
@@ -100,7 +110,7 @@ body {
 **************************/
 /* Button gemaakt met behulp van de Light/dark & button/states deepdives, Sanne en chatgpt voor debuggen*/
 
-  form:nth-of-type(1) {
+  > form:nth-of-type(1) { 
     padding: 0%;
     margin: 0%;
     display: flex;
@@ -117,6 +127,7 @@ body {
     position: relative;
 
     transition: 0.2s ease-in;
+    
 
       &:hover:nth-of-type(1) {
       transform: translate(-0.1em, -0.1em);
@@ -232,7 +243,8 @@ header {
     padding: 1%;
     align-items: center;
     display: flex;
-    font-size: 2em;
+    font-size: clamp(2em 4em 10em);
+    text-shadow: 2px 2px 2px rgb(1, 0, 0);
   }
 }
 
@@ -265,8 +277,13 @@ footer {
   img {
     display: block;
     width: 6em;
-  }
+    }
   } 
+
+    #cookieModal {
+      background-color: #1b5273;
+      padding: 5%;
+  }
 }
 body.eatCookie #cookieButton img {
     content:url("/images/images-web/Cookie-eaten-Mattias.png") / "acceptedCookie";}
@@ -303,8 +320,8 @@ main {
     @media (width < 40em){
           z-index: 50;
           position: relative;
-          left: calc(50% - 4.6rem);
-          bottom: calc(50% - 10.1rem);
+          left: calc(50% - 3.5rem);
+          bottom: calc(50% - 7.rem);
         }
       
     &:hover {
@@ -387,6 +404,14 @@ li {
     rotate( calc( var(--rotate) * 360deg ) )
     translateY( calc( var(--base) * 25vmin + var(--distance) * 30vmin) )
     rotate( calc( var(--rotate)* -360deg ));
+    
+  &.is-pulled img {
+    animation-name: --trinket-animation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    animation-timing-function: ease-in-out
+    }
 }
 
   &::before {
@@ -452,17 +477,14 @@ li {
       rotate .5s 1s,
       opacity .5s 1s;
     pointer-events:none;
+    
   }
 
   img {
-    width:80%;
+    max-width:80%;
   }
 }
 
-  #cookieModal {
-    background-color: #1b5273;
-  
-  }
 
 
 

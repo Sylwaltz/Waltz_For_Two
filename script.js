@@ -19,8 +19,6 @@ function giveCapsule() {
     }
 }
 
-
-
 function acceptCookie() {
     document.body.classList.add("eatCookie");
 }
