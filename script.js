@@ -22,7 +22,3 @@ function giveCapsule() {
 function acceptCookie() {
     document.body.classList.add("eatCookie");
 }
-
-function denyCookie() {
-    document.body.classList.remove("eatCookie");
-}

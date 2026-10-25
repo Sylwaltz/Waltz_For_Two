@@ -6,9 +6,9 @@
   font-style: normal;
 }
 @font-face {
-  font-family: "Rubik Spraypaint";
+  font-family: "Chewy";
   src:
-  url(../fonts/RampartOne-Regular.ttf);
+  url(../fonts/Chewy-Regular.ttf);
   font-weight: 400;
   font-style: normal;
 }
@@ -35,9 +35,17 @@ html {
   color-scheme: light dark;
   --gradient-color-light: light-dark(#fae586 , #b5dbf0);
   --gradient-color-dark: light-dark(#bcce77, #599bbc );
-  --header-color: light-dark(#91AD6C, #1b5273);
-  --lines-color: light-dark(#FFFFFF70, #FFFFFF30)
-  ;
+  --header-color: light-dark(#91ad6c , #1b5273);
+  --text-color: light-dark(#f2f7ed, #e7f0f5);
+  --text-shadow: light-dark(#334121, #0a2637);
+  --lines-color: light-dark(#FFFFFF70, #FFFFFF30);
+  
+  --cookies-bg: light-dark(#9eb87b95,#36739995);
+  --cookies-border: light-dark(#334121, #0a2637);
+  --text-shadow: light-dark(#89a662ee, #154969ee);
+
+  --backdrop-active: light-dark(#80ad46ee,#4997c7ee );
+  --focus-color: light-dark(#a3fb51ee, #e875cfee);
 }
 html:has([value="light-theme"]:checked) {
   color-scheme: light;
@@ -130,42 +138,42 @@ body {
     
 
       &:hover:nth-of-type(1) {
-      transform: translate(-0.1em, -0.1em);
+      transform: scale(1.05);
       content: url("/images/images-web/Mattias-HOVER.png");
       width: 8em;
     }
 
       &:hover:nth-of-type(2) {
-      transform: translate(-0.1em, -0.1em);
+      transform: scale(1.05);
 
     }
 
     &:hover:nth-of-type(3) {
-      transform: translate(-0.1em, -0.1em);
+      transform: scale(1.05);
       content: url("/images/images-web/Vince-HOVER.png");
       width: 8em;
 
     }
 
     &:has(input:checked):hover:nth-of-type(1) {
-      transform: translate(-0.1em, -0.1em);
+      transform: scale(1.05);
       content: url("/images/images-web/Mattias-ON.png");
       width: 8em;
     }
 
     &:has(input:checked):hover:nth-of-type(3) {
-      transform: translate(-0.1em, -0.1em);
+      transform: scale(1.05);
       content: url("/images/images-web/Vince-ON.png");
       width: 8em;
     }
 
 
     &:has(input:checked) {
-      filter: drop-shadow(0 0 0.3em lime);
+      filter: drop-shadow(0 0 0.3em #56e57c);
     }
 
     &:has(input:focus-visible) {
-      filter: drop-shadow(0 0 0.5em deeppink);
+      filter: drop-shadow(0 0 0.5em #e875cfee);
     }
 
     
@@ -240,11 +248,12 @@ header {
   border-bottom-right-radius: 15%; */
 
   h1 {
+    color: var(--text-color);
     padding: 1%;
     align-items: center;
     display: flex;
-    font-size: clamp(2em 4em 10em);
-    text-shadow: 2px 2px 2px rgb(1, 0, 0);
+    font-size: clamp(1.8rem, 3vw, 2.8rem);
+    text-shadow: 2px 2px 2px var(--text-shadow);
   }
 }
 
@@ -270,9 +279,15 @@ footer {
     transition: .2s ease-in;
     background-color: inherit;
     border: none;
+    outline: none;
+
+    &:focus {
+      filter: drop-shadow(0 0 0.5em #e875cfee);
+    }
+    
     
     &:hover {
-      transform: translate(-0.1em, -0.1em);
+      transform: scale(1.05);
     }
   img {
     display: block;
@@ -281,8 +296,15 @@ footer {
   } 
 
     #cookieModal {
-      background-color: #1b5273;
-      padding: 5%;
+      text-shadow: 2px 2px 2px var(--text-shadow);
+      color: var(--text-color);
+      font-family: "Chewy";
+      font-size: clamp(1rem, 1.5vw, 3vw);
+      width: 80%;
+      background-color: var(--cookies-bg);
+      border-color:  var(--cookies-border);
+      border-radius: 10px 10px;
+      padding: 2%;
   }
 }
 body.eatCookie #cookieButton img {
@@ -316,6 +338,11 @@ main {
     left: calc(50% - 3.4rem);
     bottom: calc(50% - 7.5rem);
     transition: transform 1.0s ease-in-out;
+    outline: none;
+
+      &:focus {
+      filter: drop-shadow(0 0 0.5em #e875cfee);
+    }
 
     @media (width < 40em){
           z-index: 50;
@@ -481,7 +508,7 @@ li {
   }
 
   img {
-    max-width:80%;
+    max-width:70%;
   }
 }
 
