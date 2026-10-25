@@ -429,7 +429,7 @@ li {
     transform:
     /* veranderen van distance hier*/
     rotate( calc( var(--rotate) * 360deg ) )
-    translateY( calc( var(--base) * 30vmin + var(--distance) * 30vmin) )
+    translateY( calc( var(--base) * 25vmin + var(--distance) * 30vmin) )
     rotate( calc( var(--rotate)* -360deg ));
     
   &.is-pulled img {
