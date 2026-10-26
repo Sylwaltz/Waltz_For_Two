@@ -4,29 +4,33 @@ Het staat model voor digitale tuintjes welke bij 'Het web is voor iedereen' door
 
 ### bronnen
 
+- Stack Overflow: Als ik tegen een specifieke probleem aanloop, keek ik hier als iemand hetzelfde probleem had en als er oplossingen ervoor waren
 - MDN Web Docs: Gebruikt voor uitleg over HTML en CSS
 - Pinterest: Voor inspiratie
 
 ## Learning Log
 
 CHECK-OUT (Sprint 0)
-Leg uit wat een source hosting platform is en voor welke jij gekozen hebt:
-Een source hosting platform is een online platform waar je code kan bewerken en opslaan en later op het web kan plaatsen.
-Vertel welke domeinnaam jij gekozen hebt en hoe je die hebt gekoppeld aan jouw pagina:
-Mijn domeinnaam is sylwaltz.nl deze heb ik gekoppeld door het in Github en daarna door Transip online op het web laten zetten.
-Beschrijf hoe je aanpassingen aan jouw pagina kunt maken en hoe je er voor zorgt dat die op het web gepubliceerd worden:
-Je kunt aanpassingen maken in je document in bijv. VScodium, ze dan opslaan en dan een commit er van te maken. Github stuurt deze aanpassingen dan door naar de website.
+
+- Leg uit wat een source hosting platform is en voor welke jij gekozen hebt:
+  Een source hosting platform is een online platform waar je code kan bewerken en opslaan en later op het web kan plaatsen.
+- Vertel welke domeinnaam jij gekozen hebt en hoe je die hebt gekoppeld aan jouw pagina:
+  Mijn domeinnaam is sylwaltz.nl deze heb ik gekoppeld door het in Github en daarna door Transip online op het web laten zetten.
+- Beschrijf hoe je aanpassingen aan jouw pagina kunt maken en hoe je er voor zorgt dat die op het web gepubliceerd worden:
+  Je kunt aanpassingen maken in je document in bijv. VScodium, ze dan opslaan en dan een commit er van te maken. Github stuurt deze aanpassingen dan door naar de website.
 
 CHECK-OUT (Sprint 1)
 Check out:
-Leg uit wat een digital garden is en waarom dat ander is dan een reguliere website:
-Digital garden zijn een persoonlijke verzameling van jouw interesses, ideeën en opinies. Deze websites zijn nooit af en worden altijd bijgewerkt door de maker.
-Leg uit wat een website ‘webby’ maakt en welke websites jou het meeste inspireren:
-Wat een website ‘webby’ maakt, is dat het interactief is (klikbare elementen), adaptieve lay-out en toegankelijk voor meeste gebruikers.
-inspiratie (https://ita.toys/, https://app.notion.com/p/digital-garden-202fbdf4ad4480538b87d2fcab8a5803, https://sortedsongs.com/)
-Vertel waar jij mee aan de slag wilt gaan bij het maken van jouw eigen digital garden:
-Ik wil graag iets doen met animaties en dingen interactief maken
-CHECK-OUT (Sprint 2)
+
+- Leg uit wat een digital garden is en waarom dat ander is dan een reguliere website:
+  Digital garden zijn een persoonlijke verzameling van jouw interesses, ideeën en opinies. Deze websites zijn nooit af en worden altijd bijgewerkt door de maker.
+- Leg uit wat een website ‘webby’ maakt en welke websites jou het meeste inspireren:
+  Wat een website ‘webby’ maakt, is dat het interactief is (klikbare elementen), adaptieve lay-out en toegankelijk voor meeste gebruikers.
+  inspiratie (https://ita.toys/, https://app.notion.com/p/digital-garden-202fbdf4ad4480538b87d2fcab8a5803, https://sortedsongs.com/)
+- Vertel waar jij mee aan de slag wilt gaan bij het maken van jouw eigen digital garden:
+  Ik wil graag iets doen met animaties en dingen interactief maken
+
+CHECK-OUT (Sprint 1)
 presenteren (online)
 VRAGEN:
 
@@ -37,11 +41,16 @@ VRAGEN:
 - Wat is het karakter/ de uitstraling/ het gevoel dat bij het onderwerp past? (bijv. stoer, hip, vrolijk, dynamisch, eenvoudig, enz.)
   Ik wil het een speelse vibe geven maar de content erin wat nostalgisch/ sentimenteel
 
-  Leg uit waar het Visual Research in 3 stappen naartoe werkt: Het Visual Research helpt je van je sfeerwoord een concreet beeld te krijgen van je thema en hoe je dat wilt visualiseren.
+- Leg uit waar het Visual Research in 3 stappen naartoe werkt: Het Visual Research helpt je van je sfeerwoord een concreet beeld te krijgen van je thema en hoe je dat wilt visualiseren.
   Vertel in 2 zinnen waar jouw Garden over gaat, en met welke content je dat gaat doen (beeld, tekst, sound, animatie enz).: Ik wil mijn Garden maken over trinkets/charms die ik over tijd heb verzameld. Hier wil ik graag veel van de afbeeldingen zelf tekenen (zoals de trinkets), fotos van de voorwerpen zelf en het liefst weinig tekst.
   Vertel kort welk idee van de Crazy 8 je het liefst zou willen uitvoeren/ verder zou willen onderzoeken: Ik zou graag de sleutelhanger of gachapon idee uitvoeren/ verder willen onderzoeken.
 
-CHECK-OUT (Sprint 3)
+![Concepten in mobilescherm](./images/images-readme/Mobile%20schetsen.jpg)
+
+![Concepten in mobilescherm](./images/images-readme/Mobile%20schetsen.jpg)
+![Peerfeedback op mobileschermen](./images/images-readme/Mobile%20schetsen%20peerfeedback-2.jpg)
+
+CHECK-OUT (Sprint 1)
 Welke feedback heb je gehad?
 Ik kreeg vandaag niet per se heel veel feedback maar ik kreeg wel te horen dat mijn Gachapon idee het interessante was uit mijn vijf schetsen, dus ga ik daar verder mee.
 
@@ -53,7 +62,7 @@ Heading elementen zijn semantiek tags die gebruikt worden om hoofdtitels en onde
 Hoe ga jij met cookies om> Beschrijf jouw beweegredenen en of die zijn veranderd na het volgen van dit college.
 Als ik cookies tegenkom weiger ik ze meteen, of als ik de optie krijg, check al preference boxes uit.
 
-CHECK-OUT (Sprint 6: Aug 29)
+CHECK-OUT (Sprint 2: Aug 29)
 Wat bedoelt Vasilis met de uitspraak: Semantiek doet mij niet zo veel, ik ben liever bezig met de UX van HTML?
 De code hoeft niet helemaal correct te zijn maar de code moet wel toegankelijk zijn voor de gebruiker.
 
@@ -84,7 +93,11 @@ Check-out (Sprint 3 : OKT 5)
 - Leg uit wat er met de volgende termen bedoeld wordt: kerning, tracking, leading, flush-left, flush-right, centered, justified, indent, outdent, modular scale, movable type, focus punt, vijf soorten contrast, spatial tension. (Hint, alle termen staan in de artikelen die we samen gelezen hebben)
   Dit zijn allemaal tyopgrafische termen die ervoor zorgen dat jouw typografie er goed uitziet en harmonie en betekenis aangeeft.
 - Wat is jouw ideale regellengte (measure)? Leg uit waarom.
+  Ik zou zeggen ergens van 50 tot 60 zou mijn ideale regel lengte zijn. Het is goed leesbaar en werkt ook goed op kleine schermen
 - Als je in een ontwerp maar één variabele tot je beschikking had om hiërarchie aan te brengen (grootte, plaatsing, spacing, lettersoorten), welke zou je dan gebruiken en waarom?
+  Ik denk dat ik plaatsing zou kiezen omdat daar veel mee gespeeld kan worden. Vooral als het gaat om hierachie kan plaatsing veel doen om de kijker's aandacht ergens te brengen.
+
+Check-out (Sprint 3 : OKT 7)
 
 - Waarom is het goed om een grid in je ontwerp toe te passen? Noem een reden voor de ontwerper en een voor de bezoeker.
   Een grid is handig om toepassen als ontwerper omdat dit structuur geeft
@@ -94,13 +107,15 @@ Check-out (Sprint 3 : OKT 5)
   Bomvol
   [...]
 
-  9-10 AUG
+  9-10 OKT
   FEEDBACK:
   - Gevoel van liedje is niet passend, wat zachter maken
   - Deepdives doen om technisch te helpen
   - Wat meer ruimte tussen woorden en regels
-  - --
-    Heb besloten om de trinkets de vorm te geven van de karakertjes van de light en dark mode, had dit gedaan omdat ik feedback kreeg dat de poppetjes anders weinig waarde toevoegen en er een beetje out of place zijn als ik het hield bij mijn oude concept/idee
+
+  ***
+
+  Heb besloten om de trinkets de vorm te geven van de karakertjes van de light en dark mode, had dit gedaan omdat ik feedback kreeg dat de poppetjes anders weinig waarde toevoegen en er een beetje out of place zijn als ik het hield bij mijn oude concept/idee
 
 ### 31 aug - Kickoff
 
