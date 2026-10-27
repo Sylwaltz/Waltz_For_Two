@@ -442,7 +442,7 @@ Ik had gekozen voor het lied: Voor ik vergeet van Spinvis. Hierbij had ik ook ee
 
 </details>
 
-## Vrijdag 9 OKT
+## Vrijdag 9 OKT - Sprint 3
 
 <details>
 
@@ -537,6 +537,7 @@ nog paar dingen missen en er moeten nog wat dingen gefixt worden. Mijn songtekst
 
 <details>
 Bij de Expo hebben we elkaars werk bekeken en feedback gegeven op 3 verschillende categories. Ik heb in het algemeen best veel postieve feedback gekregen en nog paar verbeterpunten.
+
 ![Stickers/feedback vanzelf](./images/images-readme/Sticker-feedback.jpg)
 handschrift in paarse pen is van mij
 
@@ -546,6 +547,15 @@ feedback van anderen op mijn website. Het zijn nog kleine verbeterpunten en ik h
 ### Webby forumlier
 
 Voor het laatst heb ik de webby formulier ingevuld met een duo.
-![alt text]()
+
+![WebbyFormSP3](<./images/images-readme/Handgeschreven_2026-10-27_200320%20(2).jpg>)
+![WebbyFormSP3](./images/images-readme/Document_2026-10-27_200440.jpg)
+Er zijn nog paar kleine verbterpunten zoals de achtergrond die bij de dark mode een beetje donkerder kan, ook in het algemeen kan de achtergrond wat donkerder zodat de grijze trinkets beter zichtbaar zijn. Ook is het dat de knop niet helemaal duidelijk is als die klikbaar is.
+
+Mijn learning log was nog incompleet dus heb ik de learning log form niet ingevult en zit ik alles momenteel bij te werken.
+
+### Mini reflectie
+
+Ik vond dit blok zeer uitdagend maar ook heel leuk omdat we zelf het onderwerp mochten kiezen. Hoewel ik veel tijd heb besteed aan het tekenen van mijn assests, ben ik ook best blij met mijn code. Ik had een flinke achterstand en moest veel dingen inhalen maar door de hulp van docenten en de feedback van anderen kwam ik nog best ver. Er missen inderdaad nog wat dingen, maar als ik meer tijd zou ik sowieso de responsiveness fixen, meer animaties gebruiken zoals in deze codepens (https://codepen.io/tianaxu976/pen/ExWqJao, https://codepen.io/editor/Ma5a/pen/01a15ac6-b828-7b78-83ed-9f698d025b39), meer interactie en nog het inkleuren van de trinkets. Ik heb veel geleerd over coderen en zou zeker in de toekomst nog iets doen met frontend design, maar ik zou dan wel meer tijd nodig hebben om een goede basis kennis op te bouwen. Ook hoop ik in de volgende blokken bij te blijven met de stof, want ik vind het wel nog jammer dat ik weinig heb gedaan met mijn songtekst omdat ik achterliep met mijn site. Daarnaast moet ik ook goed mijn proces bijhouden en dingen niet achteraf loggen.
 
 </details>
