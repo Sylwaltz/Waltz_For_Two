@@ -9,6 +9,8 @@ Het staat model voor digitale tuintjes welke bij 'Het web is voor iedereen' door
 - Stack Overflow: Als ik tegen een specifieke probleem aanloop, keek ik hier als iemand hetzelfde probleem had en als er oplossingen ervoor waren
 - MDN Web Docs: Gebruikt voor uitleg over HTML en CSS
 - Pinterest: Voor inspiratie
+- Deep dives (en de videos/links daarin)
+- ChatGPT als ik er echt niet uitkwam en bij debuggen
 
 ## Inhoudsopgave
 
@@ -292,6 +294,7 @@ Deepdive buttons + Dialog
   Ik kreeg als feedback vooral te kijken naar mijn layout, font, de navigatie en webring gewoon helemaal weg te halen omdat ik daar toch niks mee ga doen.
 
   De website toen:
+
   ![Sprint2-Midden-Website](<./images/images-readme/Sprint2-Mid(1).jpg>)
   ![Sprint2-Midden-Website](<./images/images-readme/Sprint2-Mid(2).jpg>)
 
@@ -302,6 +305,7 @@ Deepdive buttons + Dialog
 <details>
 
 Ik ben bezig geweest met het bedenken van mijn light en dark mode. Ik had gekozen om mijn eigen karakters te veranderen in kleine sleutelhangers die de maan(dark) en zon(light) vasthouden. Ik koose voor sleutelhangers omdat ik ze dan van de scherm kon laten 'hangen' en omdat ik zelf veel sleutelhangers verzamel en past ook bij mijn trinkets idee.
+
 ![Light-dark](<./images/images-readme/Light-darkmode-schetsen(1).png>)
 ![Light-dark](<./images/images-readme/Light-darkmode-schetsen(2).png>)
 ![Light-dark](<./images/images-readme/Light-darkmode-schetsen(3).png>)
@@ -310,6 +314,7 @@ Moet ze alleen nog toevoegen in mijn website.
 ### Bi-Weekly Geek
 
 Deze weekly geek ging over AI en valse informatie. Alweer deden we eerst een vragenlijst in Wooclap en gingen daarna op papier vragen bedenken en beantwoorden van anderen.
+
 ![Weekly geek 2](<./images/images-readme/Weekly-Geek-Sprint2(1).jpg>)
 ![Weekly geek 2](<./images/images-readme/Weekly-Geek-Sprint2(2).jpg>)
 
@@ -422,6 +427,7 @@ Deepdive Variable fonts
 ![Deepdive variable fonts](./images/images-readme/Deepdive-Fonts.jpg)
 
 Ik had gekozen voor het lied: Voor ik vergeet van Spinvis. Hierbij had ik ook een aantal schetsen gemaakt.
+
 ![SongSchetsen](./images/images-readme/Voor%20ik%20vergeet-1.jpg)
 ![SongSchetsen](./images/images-readme/voor%20ik%20vergeet-2.jpg)
 
@@ -459,20 +465,87 @@ Ik had gekozen voor het lied: Voor ik vergeet van Spinvis. Hierbij had ik ook ee
 
 ## Herfstreces
 
+<details>
 Van een non-cmder kreeg ik ook feedback. Zij zei dat de kleuren tot nu toe helemaal niet goed bij elkaar passen en dat de gachapon's kleuren best dof zijn en niet uitspringt van de achtergrond. Ik kwam hierbij als oplossing om dan de gachapon lichter te maken.
 ![Gachapon sp3](./images/images-readme/Gachapon-Sprint3.jpg)
 
 ![Inspo kleur](./images/images-readme/Kleuren-Inspo.jpg)
 Afbeeldingen van pinterest die ik gebruikte als inspo voor het kleuren palette en achtergrond (gradient grid)
 Ook kreeg ik te horen dat de karakters bij mijn light en dark mode in context een beetje out of place staan een geen echte waarde geven. Ik besloot hierdoor de trinkets in mijn gachapon toen te veranderen en dat zij de vorm namen van mijn karakters. Hierbij liet eigenlijk los van het sentimentele aspect van mijn concept en ging het nu vooral over mijn collectie. Wat ik eigenlijk passender vind voor mezelf.
+
 ![Trinkets](./images/images-readme/AllTrinkets.png)
 ![Web-eindeHerfst](./images/images-readme/Eind-Reces.jpg)
 Hoe mijn website eruit zag na de herfst reces
 
----
+</details>
 
-Heb besloten om de trinkets de vorm te geven van de karakertjes van de light en dark mode, had dit gedaan omdat ik feedback kreeg dat de poppetjes anders weinig waarde toevoegen en er een beetje out of place zijn als ik het hield bij mijn oude concept/idee
+## Maandag 19 OKT - Sprint 3
 
-### 31 aug - Kickoff
+<details>
+Samen met een medestudent gingen we kijken hoe webby onze websites waren met een webby formulier
 
-Een fork van de model repository gemaakt en gepubliceerd via mijn eigen Github omgeving.
+![WebbyForm](./images/images-readme/WebbyDuo.jpg)
+![WebbyForm](./images/images-readme/Webbyform.jpg)
+
+Het kwam er vooral op neer dat nog heel vinden niet werkte, zoals de gachapon button en de responsiveness. Dus moet ik nog veel doen.
+
+</details>
+
+## Woensdag 21 OKT - Sprint 3
+
+<details>
+
+### Bi-Weekly Geek
+
+Bij deze weekly geek moesten we de vraag verzinnen en zelf ook gaan beantwoorden met de voorgestelde onderzoekmethodes.
+![WeeklyGeek3](./images/images-readme/Weekly-Geek-Sprint3.jpg)
+
+### Peerfeedback
+
+![Peerfeedback](./images/images-readme/peerfeedback-sprint3.jpg)
+![Peerfeedback](./images/images-readme/peerfeedback-sprint3-2.jpg)
+Bij de peerfeedback was het weer vooral: ik moet verder werken en dingen afmaken. Verder werd er gezegd om de banner weg te halen of te veranderen, de font van de titel veranderen naar iets meer pakkend en de responsiveness nog aanpassen.
+
+### Deepdive
+
+Ik heb de deepdive debuggen en verrijkken gevolgd waarbij Sanne mij heeft geholpen met de capsule animatie.
+
+</details>
+
+## Vrijdag 23 OKT - Sprint 3
+
+<details>
+
+### Retrospective
+
+Met alle sprints samen zag ik mezelf als een schildpad in een race. Hoewel mijn werktempo best sloom was, door verder te werken en niet op te geven kan ik de finish lijn zijn.
+![Retrospect](./images/images-readme/retrospectweek3-1.jpg)
+![Retrospect](./images/images-readme/retrospectweek3-2.jpg)
+
+### Feedback
+
+![Feedback sp3](./images/images-readme/Feedback-sp3.jpg)
+![Feedback sp3](<./images/images-readme/Feedback-sp3(2).jpg>)
+![Feedback sp3](<./images/images-readme/Feedback-sp3(3).jpg>)
+![Feedback sp3](<./images/images-readme/Feedback-sp3(4).jpg>)
+
+nog paar dingen missen en er moeten nog wat dingen gefixt worden. Mijn songtekst is nog best weinig en niks speciaals omdat ik vooral me focus had gelegd op mijn website.
+
+</details>
+
+## Maandag 26 OKT - EXPO
+
+<details>
+Bij de Expo hebben we elkaars werk bekeken en feedback gegeven op 3 verschillende categories. Ik heb in het algemeen best veel postieve feedback gekregen en nog paar verbeterpunten.
+![Stickers/feedback vanzelf](./images/images-readme/Sticker-feedback.jpg)
+handschrift in paarse pen is van mij
+
+![Feedback/stickers van anderen](./images/images-readme/Stickerveld.jpg)
+feedback van anderen op mijn website. Het zijn nog kleine verbeterpunten en ik hoop ze aan te passen voor de deadline.
+
+### Webby forumlier
+
+Voor het laatst heb ik de webby formulier ingevuld met een duo.
+![alt text]()
+
+</details>
