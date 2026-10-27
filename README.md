@@ -14,7 +14,7 @@ Het staat model voor digitale tuintjes welke bij 'Het web is voor iedereen' door
 
 ## Learning Log
 
-## Maandag 31 AUG
+## Maandag 31 AUG - Sprint 0
 
 <details>
 
@@ -34,15 +34,26 @@ Een zelftest gemaakt om onze kwaliteiten beter te weten.
 Je kunt aanpassingen maken in je document in bijv. VScodium, ze dan opslaan en dan een commit er van te maken. Github stuurt deze aanpassingen dan door naar de website.
 </details>
 
-## Woensdag 2 sep
+## Woensdag 2 SEP - Sprint 1
 
 <details>
 De deepdives HTML & CSS Basics en CSS: fonts met kleur en effect gevolgd, kon geen screenshots hierbij vinden....
 </details>
 
-CHECK-OUT (Sprint 1)
-7 sep
-Check out:
+## Vrijdag 4 SEP - Sprint 1 (ziek thuis)
+
+## Maandag 7 SEP - Sprint 1
+
+<details>
+In een groepje hebben we een artikel gelezen over wat een digital garden eigenlijk is en verschillende lees tactieken gebruikt om zoekend te lezen.
+
+We kregen de opdracht om twee websites te analyseren en te kijken of ze 'webby' zijn.
+De twee websites die ik ging analyseren was https://www.naiveweekly.com/ en https://www.webdesignmuseum.org/
+
+![2 webby websites formulier](./images/images-readme/Twee%20website%20analyseren.jpg)
+Daarna moesten we in groepjes bespreken welke het minst en meest webby was. Wij kozen https://kwon.nyc/internet/ als minst en https://melonland.net/ als meest webby.
+
+### CHECK-OUT
 
 - Leg uit wat een digital garden is en waarom dat ander is dan een reguliere website:
   Digital garden zijn een persoonlijke verzameling van jouw interesses, ideeën en opinies. Deze websites zijn nooit af en worden altijd bijgewerkt door de maker.
@@ -50,11 +61,30 @@ Check out:
   Wat een website ‘webby’ maakt, is dat het interactief is (klikbare elementen), adaptieve lay-out en toegankelijk voor meeste gebruikers.
   inspiratie (https://ita.toys/, https://app.notion.com/p/digital-garden-202fbdf4ad4480538b87d2fcab8a5803, https://sortedsongs.com/)
 - Vertel waar jij mee aan de slag wilt gaan bij het maken van jouw eigen digital garden:
-  Ik wil graag iets doen met animaties en dingen interactief maken
+Ik wil graag iets doen met animaties en dingen interactief maken
+</details>
 
-CHECK-OUT (8 Sep Sprint 1)
-presenteren (online)
-VRAGEN:
+## Dinsdag 8 SEP - Sprint 1
+
+<details>
+We moesten een HTML presentatie maken met remark over een onderwerp voor je Digital garden. Hierbij moest je ook 50 afbeeldingen verzamlen, 10 linkjes en een introtekst verzinnen.
+
+![Slide 1](./images/images-readme/PRESENTATIE-1.jpg)
+![Slide 2](<./images/images-readme/PRESENTATIE-4(2).jpg>)
+![Slide 3](./images/images-readme/PRESENTATIE-2.jpg)
+![Slide 4](./images/images-readme/PRESENTATIE-3.jpg)
+![Slide 5](./images/images-readme/PRESENTATIE-5.jpg)
+![Slide 6](./images/images-readme/PRESENTATIE-6.jpg)
+
+Mijn onderwerp zijn trinkets maar ik weet nog niet helemaal in welke richting ik het wil vertellen.
+
+</details>
+
+## Woensdag 9 SEP - Sprint 1 (Online)
+
+<details>
+
+We moesten online onze onderwerp presenteren met een medestudent, hierbij hadden we ook wat vragen beantwoord:
 
 - Wat is voor jou de essentie van wat je hebt gepresenteerd qua onderwerp en geschreven/beeldende content?
   De essentie voor mij is eigenlijk het verzamelen en wat het nou betekent. Heeft het verzamelen nog waarde en vallen we niet victim aan consumptie?
@@ -63,11 +93,31 @@ VRAGEN:
 - Wat is het karakter/ de uitstraling/ het gevoel dat bij het onderwerp past? (bijv. stoer, hip, vrolijk, dynamisch, eenvoudig, enz.)
   Ik wil het een speelse vibe geven maar de content erin wat nostalgisch/ sentimenteel
 
-- Leg uit waar het Visual Research in 3 stappen naartoe werkt: Het Visual Research helpt je van je sfeerwoord een concreet beeld te krijgen van je thema en hoe je dat wilt visualiseren.
-  Vertel in 2 zinnen waar jouw Garden over gaat, en met welke content je dat gaat doen (beeld, tekst, sound, animatie enz).: Ik wil mijn Garden maken over trinkets/charms die ik over tijd heb verzameld. Hier wil ik graag veel van de afbeeldingen zelf tekenen (zoals de trinkets), fotos van de voorwerpen zelf en het liefst weinig tekst.
-  Vertel kort welk idee van de Crazy 8 je het liefst zou willen uitvoeren/ verder zou willen onderzoeken: Ik zou graag de sleutelhanger of gachapon idee uitvoeren/ verder willen onderzoeken.
+Daarna begonnen we met een visual research te doen waar ik koos voor de sfeerwoord: sentimenteel, iets wat ik passend vond voor mijn trinkets omdat het vaak gaat over herinnnerigen en het objectje. Nadat ik het sfeerwoord had gekozen moest ik inspiratie vinden door afbeeldingen en posters te verzamelen waarnaar ik 4 posters moest kiezen als inspiratie voor ideeën met crazy 8's.
+![Sfeerwoord](./images/images-readme/VisualResearch-1.png)
+![Afbeeldingen bij onderwerp/sfeerwoord](./images/images-readme/VisualResearch-2.png)
+![Posters](./images/images-readme/VisualResearch-3.jpg)
+![4 Posters](./images/images-readme/VisualResearch-4.jpg)
+![Crazy 8's](./images/images-readme/VisualResearch-5.jpg)
+Ik had na mijn crazy 8's nog 5 extra ideeën bedacht, qua hoe de layout eruit zou zien. Maar ik vond ze wat minder doordat ik layouts in een minuut bedenken wel lastig vind.
+![Crazy's 8 beoordelen](./images/images-readme/VisualResearch-6.jpg)
+Heb alleen 4 beoordeeld omdat ik de rest gewoon niet heel interessant vond en niks veel kon over zeggen.
 
-  9 sep
+Als huiswerk kregen we de opdracht om je beste ideeën te schetsen in mobile schermen.
+![Mobile schetsen](./images/images-readme/Mobile%20schetsen.jpg)
+
+### CHECK-OUT
+
+- Leg uit waar het Visual Research in 3 stappen naartoe werkt
+  Het Visual Research helpt je van je sfeerwoord een concreet beeld te krijgen van je thema en hoe je dat wilt visualiseren.
+- Vertel in 2 zinnen waar jouw Garden over gaat, en met welke content je dat gaat doen (beeld, tekst, sound, animatie enz)
+  Ik wil mijn Garden maken over trinkets/charms die ik over tijd heb verzameld. Hier wil ik graag veel van de afbeeldingen zelf tekenen (zoals de trinkets), fotos van de voorwerpen zelf en het liefst weinig tekst.
+- Vertel kort welk idee van de Crazy 8 je het liefst zou willen uitvoeren/ verder zou willen onderzoeken
+  Ik zou graag de sleutelhanger of gachapon idee uitvoeren/ verder willen onderzoeken.
+
+</details>
+
+9 sep
 
 ![Concepten in mobilescherm](./images/images-readme/Mobile%20schetsen.jpg)
 
