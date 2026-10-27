@@ -197,7 +197,7 @@ Ik was niet blij met hoe mijn gachapon eruit ziet omdat hij er wobbelig en geen 
 
 ### Retrospective
 
-We begonnen eerst met het rangschikken van verschillende Sketchnotes, daarna gingen we indivueel bezig met het tekenen van de retrospective.
+We begonnen eerst met het rangschikken van verschillende Sketchnotes, daarna gingen we indivueel bezig met het tekenen van de retrospective. Mijn metafoor hiervoor was dat mijn prive live en school leven samen kwamen en zich vormde in een orkaan van stres en andere problemenen.
 ![Retrospective week 1](./images/images-readme/retrospectweek1-1.jpg)
 ![Retrospective week 1](./images/images-readme/retrospectweek1-2.jpg)
 ![Retrospective week 1](./images/images-readme/retrospectweek1-3.jpg)
@@ -379,6 +379,7 @@ Uiteindelijk kwam ik op het idee om een cork bord te plaatsen waar polaroid foto
 
 ### Retrospective
 
+Hier was mijn metafoor dat ik van mij tijd word gestolen omdat ik andere activiteiten mijn aandacht gaf inplaatsvan het werken aan mijn website.
 ![Retrospective sp2](./images/images-readme/retrospectweek2-1.jpg)
 ![Retrospective sp2](./images/images-readme/retrospectweek2-2.jpg)
 ![Retrospective sp2](./images/images-readme/retrospectweek2-3.jpg)
@@ -521,6 +522,8 @@ Ik heb de deepdive debuggen en verrijkken gevolgd waarbij Sanne mij heeft geholp
 Met alle sprints samen zag ik mezelf als een schildpad in een race. Hoewel mijn werktempo best sloom was, door verder te werken en niet op te geven kan ik de finish lijn zijn.
 ![Retrospect](./images/images-readme/retrospectweek3-1.jpg)
 ![Retrospect](./images/images-readme/retrospectweek3-2.jpg)
+![Retrospect](./images/images-readme/retrospectweek3-3.jpg)
+
 
 ### Feedback
 
