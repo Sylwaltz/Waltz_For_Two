@@ -1,5 +1,7 @@
 # Model
 
+https://sylwaltz.nl/
+
 Het staat model voor digitale tuintjes welke bij 'Het web is voor iedereen' door studenten worden gemaakt.
 
 ### bronnen
@@ -8,18 +10,38 @@ Het staat model voor digitale tuintjes welke bij 'Het web is voor iedereen' door
 - MDN Web Docs: Gebruikt voor uitleg over HTML en CSS
 - Pinterest: Voor inspiratie
 
+## Inhoudsopgave
+
 ## Learning Log
 
-CHECK-OUT (Sprint 0)
+## Maandag 31 AUG
+
+<details>
+
+Een fork gemaakt, domeinnaam aangemaakt en gepubliceerd met Github pages.
+
+Een zelftest gemaakt om onze kwaliteiten beter te weten.
+![Concepten in mobilescherm](./images/images-readme/Document_ZelfTest.jpg)
+![Concepten in mobilescherm](./images/images-readme/Document_2026-10-24_232502.jpg)
+
+### CHECK-OUT
 
 - Leg uit wat een source hosting platform is en voor welke jij gekozen hebt:
   Een source hosting platform is een online platform waar je code kan bewerken en opslaan en later op het web kan plaatsen.
 - Vertel welke domeinnaam jij gekozen hebt en hoe je die hebt gekoppeld aan jouw pagina:
   Mijn domeinnaam is sylwaltz.nl deze heb ik gekoppeld door het in Github en daarna door Transip online op het web laten zetten.
 - Beschrijf hoe je aanpassingen aan jouw pagina kunt maken en hoe je er voor zorgt dat die op het web gepubliceerd worden:
-  Je kunt aanpassingen maken in je document in bijv. VScodium, ze dan opslaan en dan een commit er van te maken. Github stuurt deze aanpassingen dan door naar de website.
+Je kunt aanpassingen maken in je document in bijv. VScodium, ze dan opslaan en dan een commit er van te maken. Github stuurt deze aanpassingen dan door naar de website.
+</details>
+
+## Woensdag 2 sep
+
+<details>
+De deepdives HTML & CSS Basics en CSS: fonts met kleur en effect gevolgd, kon geen screenshots hierbij vinden....
+</details>
 
 CHECK-OUT (Sprint 1)
+7 sep
 Check out:
 
 - Leg uit wat een digital garden is en waarom dat ander is dan een reguliere website:
@@ -30,7 +52,7 @@ Check out:
 - Vertel waar jij mee aan de slag wilt gaan bij het maken van jouw eigen digital garden:
   Ik wil graag iets doen met animaties en dingen interactief maken
 
-CHECK-OUT (Sprint 1)
+CHECK-OUT (8 Sep Sprint 1)
 presenteren (online)
 VRAGEN:
 
@@ -45,9 +67,11 @@ VRAGEN:
   Vertel in 2 zinnen waar jouw Garden over gaat, en met welke content je dat gaat doen (beeld, tekst, sound, animatie enz).: Ik wil mijn Garden maken over trinkets/charms die ik over tijd heb verzameld. Hier wil ik graag veel van de afbeeldingen zelf tekenen (zoals de trinkets), fotos van de voorwerpen zelf en het liefst weinig tekst.
   Vertel kort welk idee van de Crazy 8 je het liefst zou willen uitvoeren/ verder zou willen onderzoeken: Ik zou graag de sleutelhanger of gachapon idee uitvoeren/ verder willen onderzoeken.
 
-![Concepten in mobilescherm](./images/images-readme/Mobile%20schetsen.jpg)
+  9 sep
 
 ![Concepten in mobilescherm](./images/images-readme/Mobile%20schetsen.jpg)
+
+![Concepten in mobilescherm](./images/images-readme/Mobile%20schetsen%20peerfeedback.jpg)
 ![Peerfeedback op mobileschermen](./images/images-readme/Mobile%20schetsen%20peerfeedback-2.jpg)
 
 CHECK-OUT (Sprint 1)
@@ -62,7 +86,7 @@ Heading elementen zijn semantiek tags die gebruikt worden om hoofdtitels en onde
 Hoe ga jij met cookies om> Beschrijf jouw beweegredenen en of die zijn veranderd na het volgen van dit college.
 Als ik cookies tegenkom weiger ik ze meteen, of als ik de optie krijg, check al preference boxes uit.
 
-CHECK-OUT (Sprint 2: Aug 29)
+CHECK-OUT (Sprint 2: Sep 28)
 Wat bedoelt Vasilis met de uitspraak: Semantiek doet mij niet zo veel, ik ben liever bezig met de UX van HTML?
 De code hoeft niet helemaal correct te zijn maar de code moet wel toegankelijk zijn voor de gebruiker.
 
